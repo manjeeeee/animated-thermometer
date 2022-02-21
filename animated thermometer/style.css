@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right , rgba(238, 137, 23, 0.3), rgba(18, 216, 107, 0.4)), url(winter.jpg);
+    /* background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url(../images/computer.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container h1{
+    font-size: 90px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-div{
+    font-size: 70px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    padding-top: 30px;
+}
+
+.inner-div h3{
+   line-height: 30px;
+}
+
+
+.inner-div span{
+    font-size: 110px;
+    padding-top: 20px;
+    color: aqua;
+}
+
+
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading"></h1>
+        <div class="inner-div">
+            <h3>This is animated <br> thermometer <span id="temp" class="fa"></span></h3>
+        </div>
+    </div>
+
+    <script>
+
+        const tempload = () => {
+            let temp = document.getElementById('temp');
+            setTimeout(() => {
+                temp.innerHTML = '<i class="fa-solid fa-temperature-empty"></i>';
+                temp.style.color = 'green';
+            }, 2000);
+
+
+
+            setTimeout(() => {
+                temp.innerHTML = '<i class="fa-solid fa-temperature-quarter"></i>';
+                temp.style.color = 'green';
+            }, 4000);
+
+            setTimeout(() => {
+                temp.innerHTML = '<i class="fa-solid fa-temperature-half"></i>';
+                temp.style.color = '#c1e620';
+            }, 6000);
+
+            setTimeout(() => {
+                temp.innerHTML = '<i class="fa-solid fa-temperature-three-quarters"></i>';
+                temp.style.color = '#eb8934';
+            }, 8000);
+
+            setTimeout(() => {
+                temp.innerHTML = '<i class="fa-solid fa-temperature-full"></i>';
+                temp.style.color = 'red';
+                
+               let header = () => {
+                   const heading = document.getElementById('heading');
+                   heading.innerHTML = 'its summer time';
+                }
+
+            }, 10000);
+
+
+           
+
+        }
+
+
+
+
+    
+
+        tempload();
+
+        setInterval(tempload, 10000)
+
+        header();
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+<!-- <i class="fa-solid fa-temperature-empty"></i>
+<i class="fa-solid fa-temperature-quarter"></i>
+<i class="fa-solid fa-temperature-half"></i>
+<i class="fa-solid fa-temperature-three-quarters"></i>
+<i class="fa-solid fa-temperature-full"></i> -->
